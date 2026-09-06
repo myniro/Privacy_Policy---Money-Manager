@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Money Manager</title>
+    <style>
+        :root {
+            --primary: #059669;
+            --primary-dark: #047857;
+            --primary-light: #d1fae5;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-body: #f9fafb;
+            --bg-card: #ffffff;
+            --border-color: #e5e7eb;
+            --badge-bg: #ecfdf5;
+            --badge-text: #065f46;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            color: #ffffff;
+            padding: 40px 32px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 1.05rem;
+            opacity: 0.92;
+            max-width: 600px;
+            margin: 0 auto 16px;
+        }
+
+        .meta-badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            font-size: 0.85rem;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(4px);
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 40px 32px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #111827;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 8px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #374151;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        ul {
+            margin-bottom: 18px;
+            padding-left: 24px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #111827;
+        }
+
+        .highlight-box {
+            background-color: var(--badge-bg);
+            border-left: 4px solid var(--primary);
+            padding: 18px 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 24px 0;
+            color: var(--badge-text);
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        .data-table th, .data-table td {
+            border: 1px solid var(--border-color);
+            padding: 12px 14px;
+            text-align: left;
+        }
+
+        .data-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .data-table td {
+            color: var(--text-muted);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: var(--primary-dark);
+        }
+
+        .footer {
+            border-top: 1px solid var(--border-color);
+            padding: 24px 32px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #6b7280;
+            background-color: #f9fafb;
+        }
+
+        @media (max-width: 640px) {
+            .header {
+                padding: 30px 20px;
+            }
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            .content {
+                padding: 24px 20px;
+            }
+            .data-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <h1>Privacy Policy</h1>
+        <p>Transparency, local privacy, and user ownership for <strong>Money Manager</strong></p>
+        <div class="meta-badges">
+            <span class="badge">Application: Money Manager</span>
+            <span class="badge">Effective Date: September 6, 2026</span>
+            <span class="badge">Last Updated: September 6, 2026</span>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="highlight-box">
+            <p><strong>100% Local-First Privacy Guarantee:</strong> <strong>Money Manager</strong> is designed with an offline-first architecture. Your personal financial transactions, account balances, budgets, custom wallets, receipts, and category records are stored strictly on your local device. We do not operate external developer databases or sell your data to any third party.</p>
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy applies to the <strong>Money Manager</strong> mobile application (hereinafter referred to as the "App"), developed and published for Android devices. This document explains what information is collected, how it is handled, and how your privacy rights are protected in compliance with the <strong>Google Play Developer Program Policies</strong>, General Data Protection Regulation (<strong>GDPR</strong>), and California Consumer Privacy Act (<strong>CCPA</strong>).</p>
+        <p>By downloading, installing, or using the App, you acknowledge and agree to the practices described in this Privacy Policy.</p>
+
+        <h2>2. Information We Handle and How It Is Used</h2>
+
+        <h3>2.1 Financial Data & Transaction Records (Stored Locally)</h3>
+        <p>When you record financial entries in the App, the following information is stored directly within the App's private local SQLite / Room database on your device:</p>
+        <ul>
+            <li>Transaction amounts, currency selections, dates, and times</li>
+            <li>Category classifications (e.g., Food, Transport, Salary, Bills)</li>
+            <li>Wallet / Account designations (e.g., Cash, Bank, Credit Card)</li>
+            <li>Custom transaction descriptions, notes, and memos</li>
+            <li>Monthly and category budget targets</li>
+        </ul>
+        <p><strong>Storage & Access:</strong> This data remains strictly sandboxed within your Android device storage. It is never uploaded to, accessed by, or stored on our servers.</p>
+
+        <h3>2.2 Camera and Photo Picker (Receipt & Profile Images)</h3>
+        <p>If you choose to attach receipt images to transactions or set a custom profile picture:</p>
+        <ul>
+            <li>The App utilizes the modern, zero-permission <strong>Android Photo Picker</strong> or local device file picker to allow you to select specific images.</li>
+            <li>Selected receipt images are copied exclusively to the App's private internal storage sandbox (<code>context.filesDir</code>).</li>
+            <li>Images are never transmitted across the network by our App and are deleted if you delete the associated transaction or clear app storage.</li>
+        </ul>
+
+        <h3>2.3 Google Drive Backup & Restore (Optional)</h3>
+        <p>The App provides an optional backup feature allowing you to sync your encrypted backup files to your own personal Google Drive account:</p>
+        <ul>
+            <li><strong>User Consent:</strong> Connecting your Google account is entirely optional. The App remains 100% functional offline without it.</li>
+            <li><strong>Restricted Scope:</strong> The App uses the restricted Google Drive Application Data scope (<code>drive.appdata</code>). The App can only access its own backup folder and cannot view, edit, or read any other files or documents in your Google Drive.</li>
+            <li><strong>Google API Compliance:</strong> Money Manager's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+        </ul>
+
+        <h3>2.4 Notifications & Local Alarms</h3>
+        <p>The App allows you to set daily expense reminders and bill alerts:</p>
+        <ul>
+            <li>Alarms are scheduled locally using the device's <code>AlarmManager</code>.</li>
+            <li>Notification triggers are evaluated entirely on-device without remote push notification servers or user tracking.</li>
+        </ul>
+
+        <h2>3. Third-Party Services and Advertising (Google AdMob)</h2>
+        <p>To support ongoing development and maintenance, the free version of the App integrates the <strong>Google Mobile Ads SDK (AdMob)</strong>. AdMob may automatically collect certain diagnostic and device data:</p>
+        <ul>
+            <li><strong>Advertising Identifier (Google Advertising ID / AAID):</strong> Used by Google to serve contextual or personalized advertisements according to your device advertising settings.</li>
+            <li><strong>Device Information:</strong> Device model, manufacturer, operating system version, and mobile network carrier.</li>
+            <li><strong>Diagnostics & Performance:</strong> Ad impression metrics, click-through rates, and crash diagnostics.</li>
+        </ul>
+        <p>Google's handling of ad data is governed by Google's Privacy Policy. You can learn more about how Google handles ad data and manage your personalization preferences here:</p>
+        <ul>
+            <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising & Privacy Policies</a></li>
+            <li><a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ads Settings & Opt-Out</a></li>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        </ul>
+        <div class="highlight-box">
+            <p><strong>Ad-Free Option (VIP Lifetime):</strong> Users can permanently remove all advertisements and disable the AdMob SDK integration by purchasing the Lifetime VIP membership within the App.</p>
+        </div>
+
+        <h2>4. In-App Purchases (Google Play Billing)</h2>
+        <p>When you purchase the Lifetime VIP upgrade:</p>
+        <ul>
+            <li>The transaction is processed directly and securely through <strong>Google Play Billing</strong>.</li>
+            <li>We do not receive, process, or store your credit card details, banking information, or billing address.</li>
+            <li>We only receive a cryptographic purchase token from Google Play to verify and activate your VIP status on the device.</li>
+        </ul>
+
+        <h2>5. Google Play Data Safety Summary</h2>
+        <p>In accordance with Google Play's Data Safety declaration requirements, below is a clear summary of data practices:</p>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Collected by Developer?</th>
+                    <th>Shared with 3rd Parties?</th>
+                    <th>Purpose / Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Financial Info</strong> (transactions, budgets)</td>
+                    <td>No (Local only)</td>
+                    <td>No</td>
+                    <td>Stored 100% locally on user device; never leaves device.</td>
+                </tr>
+                <tr>
+                    <td><strong>Photos & Receipts</strong></td>
+                    <td>No (Local only)</td>
+                    <td>No</td>
+                    <td>Stored locally in app private sandbox for transaction records.</td>
+                </tr>
+                <tr>
+                    <td><strong>Device / Advertising ID</strong></td>
+                    <td>No (Direct to Google)</td>
+                    <td>Collected by Google AdMob</td>
+                    <td>Ad delivery, fraud prevention, and performance analytics.</td>
+                </tr>
+                <tr>
+                    <td><strong>Financial Purchase History</strong></td>
+                    <td>No (Direct to Google)</td>
+                    <td>Google Play Billing</td>
+                    <td>Processed by Google Play to grant digital purchase entitlement.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>6. Data Retention, Control, and Deletion</h2>
+        <p>Because your financial data resides solely on your Android device, you have complete control over its retention and deletion:</p>
+        <ul>
+            <li><strong>Individual Deletion:</strong> You can edit or delete any transaction, wallet, budget, or receipt at any time directly in the App.</li>
+            <li><strong>Complete Data Reset:</strong> You can export your data to a JSON backup file or delete all local records via the App Settings menu.</li>
+            <li><strong>App Uninstall / Storage Clear:</strong> Clearing the App storage in Android Settings (<code>Settings &gt; Apps &gt; Money Manager &gt; Storage &gt; Clear Storage</code>) or uninstalling the App permanently and immediately deletes all local databases and receipts from your device.</li>
+        </ul>
+
+        <h2>7. Children’s Privacy (COPPA Compliance)</h2>
+        <p>The App is not directed towards children under the age of 13 (or under 16 in the European Union). We do not knowingly collect or solicit personal information from children. If you believe that a child has provided personal information to us, please contact us at the email below so we can promptly address the issue.</p>
+
+        <h2>8. Security Safeguards</h2>
+        <p>We prioritize the security of your data:</p>
+        <ul>
+            <li>Financial databases are protected by the Android operating system's application sandbox, preventing other installed apps from accessing your private records.</li>
+            <li>All external communication (such as Google Play Billing, AdMob, and optional Google Drive backup sync) occurs exclusively over secure, encrypted HTTPS/TLS channels.</li>
+        </ul>
+
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect modifications in our features, changes in applicable laws, or updates to Google Play policies. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this Privacy Policy periodically.</p>
+
+        <h2>10. Contact Us</h2>
+        <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or your data privacy, please contact us at:</p>
+        <ul>
+            <li><strong>Developer Email:</strong> <a href="mailto:myniro.support@gmail.com">myniro.support@gmail.com</a></li>
+            <li><strong>Application:</strong> Money Manager</li>
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Money Manager. All rights reserved. Compliant with Google Play Developer Program Policies.</p>
+    </footer>
+</div>
+
+</body>
+</html>
