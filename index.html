@@ -206,7 +206,7 @@
         <div class="meta-badges">
             <span class="badge">Application: Money Manager &amp; Expense Wallet</span>
             <span class="badge">Package: com.myniro.moneymanager.zk9v</span>
-            <span class="badge">Last Updated: September 9, 2026</span>
+            <span class="badge">Last Updated: September 8, 2026</span>
         </div>
     </header>
 
@@ -257,11 +257,20 @@
         </ul>
 
         <h2>4. Permissions Used by the App</h2>
-        <p>The App requests only the minimum permissions necessary for its intended functionality:</p>
+        <p>The App requests only the minimum permissions necessary for its intended functionality. We strictly adhere to Android least-privilege principles:</p>
+        
+        <h3>4.1 Notification Permission (POST_NOTIFICATIONS)</h3>
+        <p>On Android 13 (API level 33) and higher, the App requests runtime permission to post notifications (<code>android.permission.POST_NOTIFICATIONS</code>):</p>
         <ul>
-            <li><strong>INTERNET &amp; ACCESS_NETWORK_STATE:</strong> Used solely by Google AdMob and Google Play Billing to display ads and verify purchase status.</li>
-            <li><strong>POST_NOTIFICATIONS:</strong> Used exclusively to deliver your chosen local daily expense tracking reminders and budget alerts directly on your device.</li>
-            <li><strong>USE_BIOMETRIC / USE_FINGERPRINT:</strong> Used purely locally to unlock the app if you enable the optional App Lock security feature. Biometric data is handled entirely by the Android OS and is never accessible to the App.</li>
+            <li><strong>Purpose:</strong> Used exclusively to deliver your scheduled personal expense tracking reminders (e.g., daily evening reminders so you never forget to log your daily spendings) and budget threshold alerts.</li>
+            <li><strong>Local-Only Trigger:</strong> All reminders and notifications are scheduled and triggered entirely locally on your device via Android's local alarm and notification managers. No remote push server, notification tracking service, or external network calls are involved.</li>
+            <li><strong>User Control:</strong> This permission is completely optional. You can enable, disable, change reminder times, or revoke notification permissions at any time directly within the App's Settings or through your device's system settings (<code>Settings &gt; Apps &gt; Money Manager &gt; Notifications</code>).</li>
+        </ul>
+
+        <h3>4.2 Other Device Permissions</h3>
+        <ul>
+            <li><strong>INTERNET &amp; ACCESS_NETWORK_STATE:</strong> Used solely by Google AdMob (to deliver ads in the free version) and Google Play Billing (to verify one-time Lifetime VIP purchase status). The App does not transmit your personal transactions over the internet.</li>
+            <li><strong>USE_BIOMETRIC / USE_FINGERPRINT:</strong> Used purely locally to unlock the App when you opt-in to the App Lock security feature. Your biometric authentication data is processed solely by your device's secure hardware and Android OS; the App never has access to or stores your biometric credentials.</li>
         </ul>
 
         <h2>5. Google Play Data Safety Alignment</h2>
